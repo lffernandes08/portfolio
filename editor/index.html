@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Editor do portfólio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="editor.css">
+</head>
+<body>
+
+<div class="editor-wrap">
+  <header class="editor-header">
+    <h1>Editor do portfólio</h1>
+    <div class="header-actions">
+      <span id="saveStatus" class="save-status"></span>
+      <button id="previewBtn" class="btn ghost" type="button">Pré-visualizar site ↗</button>
+      <button id="saveBtn" class="btn primary" type="button">Salvar</button>
+    </div>
+  </header>
+
+  <nav class="editor-tabs">
+    <button class="tab active" data-tab="perfil" type="button">Perfil</button>
+    <button class="tab" data-tab="materias" type="button">Matérias</button>
+    <button class="tab" data-tab="publicacoes" type="button">Publicações</button>
+    <button class="tab" data-tab="projetos" type="button">Projetos</button>
+  </nav>
+
+  <main>
+
+    <!-- PERFIL -->
+    <section class="panel active" data-panel="perfil">
+
+      <div class="field-group">
+        <label class="field-label">Nome</label>
+        <input type="text" id="fName" placeholder="Seu nome completo">
+      </div>
+
+      <div class="field-group">
+        <label class="field-label">Foto (URL da imagem, ou caminho relativo como <code>img/foto.jpg</code>)</label>
+        <div class="photo-row">
+          <input type="text" id="fPhoto" placeholder="https://... ou img/foto.jpg">
+          <label class="btn small file-btn">
+            enviar arquivo
+            <input type="file" id="fPhotoFile" accept="image/*" hidden>
+          </label>
+          <img id="fPhotoPreview" class="photo-preview" alt="">
+        </div>
+        <p class="hint" id="fPhotoUploadStatus"></p>
+        <p class="hint">Se usar um arquivo local, coloque-o na pasta <code>img/</code> do projeto e referencie como <code>img/nome-do-arquivo.jpg</code>.</p>
+      </div>
+
+      <div class="field-group two-col">
+        <div>
+          <label class="field-label">Cargo / atuação (PT) — separe com “·”</label>
+          <input type="text" id="fRolesPt" placeholder="jornalista de ciência · pesquisador · desenvolvedor">
+        </div>
+        <div>
+          <label class="field-label">Cargo / atuação (EN)</label>
+          <input type="text" id="fRolesEn" placeholder="science journalist · researcher · developer">
+        </div>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label">Bio (PT)</label>
+        <div class="rte">
+          <div class="rte-toolbar">
+            <button type="button" data-cmd="bold" title="Negrito"><b>B</b></button>
+            <button type="button" data-cmd="italic" title="Itálico"><i>I</i></button>
+            <button type="button" data-cmd="insertUnorderedList" title="Lista">•</button>
+            <button type="button" data-cmd="createLink" title="Link">🔗</button>
+          </div>
+          <div class="rte-content" id="fBioPt" contenteditable="true"></div>
+        </div>
+      </div>
+
+      <div class="field-group">
+        <label class="field-label">Bio (EN)</label>
+        <div class="rte">
+          <div class="rte-toolbar">
+            <button type="button" data-cmd="bold" title="Bold"><b>B</b></button>
+            <button type="button" data-cmd="italic" title="Italic"><i>I</i></button>
+            <button type="button" data-cmd="insertUnorderedList" title="List">•</button>
+            <button type="button" data-cmd="createLink" title="Link">🔗</button>
+          </div>
+          <div class="rte-content" id="fBioEn" contenteditable="true"></div>
+        </div>
+      </div>
+
+      <div class="field-group two-col">
+        <div>
+          <label class="field-label">Áreas de cobertura / tags (PT)</label>
+          <div class="chip-input" id="chipsPt">
+            <div class="chips"></div>
+            <input type="text" placeholder="digite e pressione Enter">
+          </div>
+        </div>
+        <div>
+          <label class="field-label">Áreas de cobertura / tags (EN)</label>
+          <div class="chip-input" id="chipsEn">
+            <div class="chips"></div>
+            <input type="text" placeholder="type and press Enter">
+          </div>
+        </div>
+      </div>
+
+      <div class="field-group two-col">
+        <div>
+          <label class="field-label">Frase do rodapé (PT)</label>
+          <input type="text" id="fFooterPt" placeholder="jornalismo · pesquisa · código">
+        </div>
+        <div>
+          <label class="field-label">Frase do rodapé (EN)</label>
+          <input type="text" id="fFooterEn" placeholder="journalism · research · code">
+        </div>
+      </div>
+
+      <div class="field-group three-col">
+        <div>
+          <label class="field-label">E-mail</label>
+          <input type="text" id="fEmail" placeholder="voce@exemplo.com">
+        </div>
+        <div>
+          <label class="field-label">LinkedIn (URL completa)</label>
+          <input type="text" id="fLinkedin" placeholder="https://linkedin.com/in/seunome">
+        </div>
+        <div>
+          <label class="field-label">GitHub (URL completa)</label>
+          <input type="text" id="fGithub" placeholder="https://github.com/seunome">
+        </div>
+      </div>
+
+    </section>
+
+    <!-- MATÉRIAS -->
+    <section class="panel" data-panel="materias">
+      <p class="hint">Cole o link da matéria e clique em “buscar automaticamente” para tentar preencher veículo, título e foto de capa. Depois revise e ajuste como quiser.</p>
+      <div id="articlesList"></div>
+      <button id="addArticle" class="btn ghost" type="button">+ adicionar matéria</button>
+    </section>
+
+    <!-- PUBLICAÇÕES -->
+    <section class="panel" data-panel="publicacoes">
+      <p class="hint">Cole o link (DOI ou página do periódico) e clique em “buscar automaticamente”. Nem todo periódico expõe esses dados — revise sempre.</p>
+      <div id="papersList"></div>
+      <button id="addPaper" class="btn ghost" type="button">+ adicionar publicação</button>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="panel" data-panel="projetos">
+      <p class="hint">Funciona bem com links de GitHub — a busca automática costuma preencher nome e descrição do repositório.</p>
+      <div id="projectsList"></div>
+      <button id="addProject" class="btn ghost" type="button">+ adicionar projeto</button>
+    </section>
+
+  </main>
+</div>
+
+<script src="editor.js"></script>
+</body>
+</html>

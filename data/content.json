@@ -1,0 +1,73 @@
+{
+  "profile": {
+    "name": "Seu Nome",
+    "photo": "",
+    "roles": {
+      "pt": "jornalista de ciência · pesquisador em divulgação científica · desenvolvedor",
+      "en": "science journalist · science communication researcher · developer"
+    },
+    "bio": {
+      "pt": "<p><strong>[Escreva aqui sua bio em 1–2 parágrafos.]</strong> Área de cobertura, veículos com que já colaborou, e o que você constrói como pesquisador/desenvolvedor.</p>",
+      "en": "<p><strong>[Write your bio here in 1–2 paragraphs.]</strong> Coverage areas, outlets you've written for, and what you build as a researcher/developer.</p>"
+    },
+    "tags": {
+      "pt": ["saúde pública", "clima", "neurociência", "tecnologia", "Python", "visualização de dados"],
+      "en": ["public health", "climate", "neuroscience", "technology", "Python", "data visualization"]
+    },
+    "footerTagline": {
+      "pt": "jornalismo · pesquisa · código",
+      "en": "journalism · research · code"
+    },
+    "social": {
+      "email": "seuemail@exemplo.com",
+      "linkedin": "https://linkedin.com/in/seunome",
+      "github": "https://github.com/seunome"
+    }
+  },
+  "articles": [
+    {
+      "url": "",
+      "outlet": "nome do veículo",
+      "image": "",
+      "title": { "pt": "Título da matéria 1", "en": "Article title 1" }
+    },
+    {
+      "url": "",
+      "outlet": "nome do veículo",
+      "image": "",
+      "title": { "pt": "Título da matéria 2", "en": "Article title 2" }
+    },
+    {
+      "url": "",
+      "outlet": "nome do veículo",
+      "image": "",
+      "title": { "pt": "Título da matéria 3", "en": "Article title 3" }
+    }
+  ],
+  "papers": [
+    {
+      "url": "",
+      "year": "2026",
+      "journal": "Nome do periódico · coautores",
+      "title": { "pt": "Título do artigo científico 1", "en": "Scientific paper title 1" }
+    },
+    {
+      "url": "",
+      "year": "2025",
+      "journal": "Nome do periódico · coautores",
+      "title": { "pt": "Título do artigo científico 2", "en": "Scientific paper title 2" }
+    }
+  ],
+  "projects": [
+    {
+      "url": "",
+      "name": "Nome do projeto 1",
+      "description": { "pt": "Descrição curta do que a aplicação faz.", "en": "Short description of what the application does." }
+    },
+    {
+      "url": "",
+      "name": "Nome do projeto 2",
+      "description": { "pt": "Descrição curta do que a aplicação faz.", "en": "Short description of what the application does." }
+    }
+  ]
+}
