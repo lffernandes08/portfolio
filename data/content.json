@@ -1,9 +1,9 @@
 {
   "profile": {
-    "name": "Luiz Felipe Fernandes Neves",
-    "photo": "img/foto-luiz-1784235040118.jpg",
+    "name": "Seu Nome",
+    "photo": "img/foto-luiz-ajustada-1784242099712.png",
     "roles": {
-      "pt": "jornalista de ciência · pesquisador em divulgação científica · desenvolvedor diletante",
+      "pt": "jornalista de ciência · pesquisador em divulgação científica · desenvolvedor",
       "en": "science journalist · science communication researcher · developer"
     },
     "bio": {
@@ -33,27 +33,27 @@
       "en": "journalism · research · code"
     },
     "social": {
-      "email": "luiz.felipe@ufg.br",
+      "email": "seuemail@exemplo.com",
       "linkedin": "https://linkedin.com/in/seunome",
       "github": "https://github.com/seunome"
     }
   },
   "articles": [
     {
-      "url": "https://www.science.org/content/article/brazilian-scientist-s-experimental-paralysis-therapy-fueling-hope-and-hype",
-      "outlet": "Science",
-      "image": "img/20260316-nid-brazil-paralysis-lede-1784235642301.jpg",
+      "url": "",
+      "outlet": "nome do veículo",
+      "image": "",
       "title": {
-        "pt": "A Brazilian scientist’s experimental paralysis therapy is fueling hope—and hype",
-        "en": ""
+        "pt": "Título da matéria 1",
+        "en": "Article title 1"
       }
     },
     {
-      "url": "https://www.scidev.net/america-latina/news/los-empleos-verdes-pagan-mas-en-america-latina/",
-      "outlet": "SciDev.Net",
-      "image": "https://www.scidev.net/america-latina/wp-content/uploads/sites/3/empleos-verdes.jpg",
+      "url": "",
+      "outlet": "nome do veículo",
+      "image": "",
       "title": {
-        "pt": "Los empleos verdes pagan más en América Latina",
+        "pt": "Título da matéria 2",
         "en": "Article title 2"
       }
     },
