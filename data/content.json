@@ -1,9 +1,9 @@
 {
   "profile": {
-    "name": "Seu Nome",
-    "photo": "",
+    "name": "Luiz Felipe Fernandes Neves",
+    "photo": "img/foto-luiz-1784235040118.jpg",
     "roles": {
-      "pt": "jornalista de ciência · pesquisador em divulgação científica · desenvolvedor",
+      "pt": "jornalista de ciência · pesquisador em divulgação científica · desenvolvedor diletante",
       "en": "science journalist · science communication researcher · developer"
     },
     "bio": {
@@ -11,37 +11,60 @@
       "en": "<p><strong>[Write your bio here in 1–2 paragraphs.]</strong> Coverage areas, outlets you've written for, and what you build as a researcher/developer.</p>"
     },
     "tags": {
-      "pt": ["saúde pública", "clima", "neurociência", "tecnologia", "Python", "visualização de dados"],
-      "en": ["public health", "climate", "neuroscience", "technology", "Python", "data visualization"]
+      "pt": [
+        "saúde pública",
+        "clima",
+        "neurociência",
+        "tecnologia",
+        "Python",
+        "visualização de dados"
+      ],
+      "en": [
+        "public health",
+        "climate",
+        "neuroscience",
+        "technology",
+        "Python",
+        "data visualization"
+      ]
     },
     "footerTagline": {
       "pt": "jornalismo · pesquisa · código",
       "en": "journalism · research · code"
     },
     "social": {
-      "email": "seuemail@exemplo.com",
+      "email": "luiz.felipe@ufg.br",
       "linkedin": "https://linkedin.com/in/seunome",
       "github": "https://github.com/seunome"
     }
   },
   "articles": [
     {
-      "url": "",
-      "outlet": "nome do veículo",
-      "image": "",
-      "title": { "pt": "Título da matéria 1", "en": "Article title 1" }
+      "url": "https://www.science.org/content/article/brazilian-scientist-s-experimental-paralysis-therapy-fueling-hope-and-hype",
+      "outlet": "Science",
+      "image": "img/20260316-nid-brazil-paralysis-lede-1784235642301.jpg",
+      "title": {
+        "pt": "A Brazilian scientist’s experimental paralysis therapy is fueling hope—and hype",
+        "en": ""
+      }
+    },
+    {
+      "url": "https://www.scidev.net/america-latina/news/los-empleos-verdes-pagan-mas-en-america-latina/",
+      "outlet": "SciDev.Net",
+      "image": "https://www.scidev.net/america-latina/wp-content/uploads/sites/3/empleos-verdes.jpg",
+      "title": {
+        "pt": "Los empleos verdes pagan más en América Latina",
+        "en": "Article title 2"
+      }
     },
     {
       "url": "",
       "outlet": "nome do veículo",
       "image": "",
-      "title": { "pt": "Título da matéria 2", "en": "Article title 2" }
-    },
-    {
-      "url": "",
-      "outlet": "nome do veículo",
-      "image": "",
-      "title": { "pt": "Título da matéria 3", "en": "Article title 3" }
+      "title": {
+        "pt": "Título da matéria 3",
+        "en": "Article title 3"
+      }
     }
   ],
   "papers": [
@@ -49,25 +72,37 @@
       "url": "",
       "year": "2026",
       "journal": "Nome do periódico · coautores",
-      "title": { "pt": "Título do artigo científico 1", "en": "Scientific paper title 1" }
+      "title": {
+        "pt": "Título do artigo científico 1",
+        "en": "Scientific paper title 1"
+      }
     },
     {
       "url": "",
       "year": "2025",
       "journal": "Nome do periódico · coautores",
-      "title": { "pt": "Título do artigo científico 2", "en": "Scientific paper title 2" }
+      "title": {
+        "pt": "Título do artigo científico 2",
+        "en": "Scientific paper title 2"
+      }
     }
   ],
   "projects": [
     {
       "url": "",
       "name": "Nome do projeto 1",
-      "description": { "pt": "Descrição curta do que a aplicação faz.", "en": "Short description of what the application does." }
+      "description": {
+        "pt": "Descrição curta do que a aplicação faz.",
+        "en": "Short description of what the application does."
+      }
     },
     {
       "url": "",
       "name": "Nome do projeto 2",
-      "description": { "pt": "Descrição curta do que a aplicação faz.", "en": "Short description of what the application does." }
+      "description": {
+        "pt": "Descrição curta do que a aplicação faz.",
+        "en": "Short description of what the application does."
+      }
     }
   ]
 }
