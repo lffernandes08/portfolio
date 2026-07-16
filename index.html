@@ -400,7 +400,7 @@
     entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
   }, { threshold: 0.15 });
 
-  fetch('./data/content.json')
+  fetch('./data/content.json', { cache: 'no-store' })
     .then(r => r.json())
     .then(data => {
       DATA = data;
