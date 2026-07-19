@@ -3,11 +3,11 @@
     "name": "Luiz Neves, PhD",
     "photo": "img/foto-luiz-ajustada-1784242692945.png",
     "roles": {
-      "pt": "jornalista de ciência · pesquisador em divulgação científica · desenvolvedor",
+      "pt": "jornalista de ciência · pesquisador em divulgação científica · desenvolvedor diletante",
       "en": "science journalist · science communication researcher · developer"
     },
     "bio": {
-      "pt": "<p><strong>[Escreva aqui sua bio em 1–2 parágrafos.]</strong> Área de cobertura, veículos com que já colaborou, e o que você constrói como pesquisador/desenvolvedor.</p>",
+      "pt": "<p>- Jornalista de ciência com <b>22 anos</b> de experiência profissional.</p><p>- <b>Doutor em Ciências</b> (Fiocruz/RJ) e pesquisador na área de comunicação pública da ciência.</p><p>- <b>Editor-chefe</b> do portal de divulgação científica da Universidade Federal de Goiás (UFG).</p><p>- Colaboro com veículos nacionais e internacionais, como <b>Science</b> e <b>SciDev.Net</b>.</p><p>- Publico em <b>português</b>, <b>espanhol</b> e <b>inglês</b>.</p><p>- Recebi <b>17 prêmios</b> de jornalismo, incluindo o 1º lugar no Prêmio IMPA de Jornalismo pela reportagem \"A Beleza Matemática dos Fractais\", em 2025.</p><p>- Nas horas vagas, desenvolvo <b>aplicações</b> baseadas em Processamento de Linguagem Natural e Inteligência Artificial.</p>",
       "en": "<p><strong>[Write your bio here in 1–2 paragraphs.]</strong> Coverage areas, outlets you've written for, and what you build as a researcher/developer.</p>"
     },
     "tags": {
@@ -29,78 +29,132 @@
       ]
     },
     "footerTagline": {
-      "pt": "jornalismo · pesquisa · código",
+      "pt": "jornalismo · pesquisa · ciência",
       "en": "journalism · research · code"
     },
     "social": {
-      "email": "seuemail@exemplo.com",
-      "linkedin": "https://linkedin.com/in/seunome",
-      "github": "https://github.com/seunome"
+      "email": "luiz.felipe@ufg.br",
+      "linkedin": "www.linkedin.com/in/luiz-felipe-fernandes-neves-35ba941a9",
+      "github": "https://github.com/lffernandes08"
     }
   },
   "articles": [
     {
-      "url": "",
-      "outlet": "nome do veículo",
-      "image": "",
+      "url": "https://www.science.org/content/article/brazilian-scientist-s-experimental-paralysis-therapy-fueling-hope-and-hype",
+      "outlet": "Science",
+      "image": "img/20260316-nid-brazil-paralysis-lede-1784418609977.jpg",
       "title": {
-        "pt": "Título da matéria 1",
+        "pt": "A Brazilian scientist’s experimental paralysis therapy is fueling hope—and hype",
         "en": "Article title 1"
       }
     },
     {
-      "url": "",
-      "outlet": "nome do veículo",
-      "image": "",
+      "url": "https://www.scidev.net/global/news/amazon-at-risk-from-mineral-extraction-for-clean-energy/",
+      "outlet": "SciDev.Net",
+      "image": "https://www.scidev.net/global/wp-content/uploads/minerales-Amazonia.jpg",
       "title": {
-        "pt": "Título da matéria 2",
-        "en": "Article title 2"
+        "pt": "Amazon at risk from mineral extraction for clean energy",
+        "en": "Article title 3"
       }
     },
     {
-      "url": "",
-      "outlet": "nome do veículo",
-      "image": "",
+      "url": "https://www.scidev.net/global/news/rio-carnival-glitter-microplastics-pollute-beach/",
+      "outlet": "SciDev.Net",
+      "image": "https://www.scidev.net/global/wp-content/uploads/microplasticos-carnaval-1.jpg",
       "title": {
-        "pt": "Título da matéria 3",
-        "en": "Article title 3"
+        "pt": "Rio Carnival glitter, microplastics ‘pollute beach’",
+        "en": ""
+      }
+    },
+    {
+      "url": "https://www.scidev.net/america-latina/news/los-empleos-verdes-pagan-mas-en-america-latina/",
+      "outlet": "SciDev.Net",
+      "image": "https://www.scidev.net/america-latina/wp-content/uploads/sites/3/empleos-verdes.jpg",
+      "title": {
+        "pt": "Los empleos verdes pagan más en América Latina",
+        "en": ""
+      }
+    },
+    {
+      "url": "https://www.scidev.net/america-latina/news/calor-aumenta-riesgo-de-desnutricion-infantil/",
+      "outlet": "SciDev.Net",
+      "image": "https://www.scidev.net/america-latina/wp-content/uploads/sites/3/calor-desnutricion.jpg",
+      "title": {
+        "pt": "Calor aumenta riesgo de desnutrición infantil",
+        "en": ""
+      }
+    },
+    {
+      "url": "https://www.scidev.net/america-latina/news/variante-blanquecina-del-aedes-aegypti-hallada-en-la-amazonia/",
+      "outlet": "SciDev.Net",
+      "image": "https://www.scidev.net/america-latina/wp-content/uploads/sites/3/Aedes-aegypti-variante-3.jpg",
+      "title": {
+        "pt": "Variante blanquecina del Aedes aegypti hallada en la Amazonia",
+        "en": ""
       }
     }
   ],
   "papers": [
     {
-      "url": "",
+      "url": "http://dx.doi.org/10.22323/330620251028234941",
       "year": "2026",
-      "journal": "Nome do periódico · coautores",
+      "journal": "Journal of Science Communication",
       "title": {
-        "pt": "Título do artigo científico 1",
+        "pt": "The politics of (mis)trust: reframing science communication in a polarized Brazil",
         "en": "Scientific paper title 1"
       }
     },
     {
-      "url": "",
-      "year": "2025",
-      "journal": "Nome do periódico · coautores",
+      "url": "http://dx.doi.org/10.15178/va.2026.159.e1618",
+      "year": "2026",
+      "journal": "Vivat Academia",
       "title": {
-        "pt": "Título do artigo científico 2",
+        "pt": "A crise climática e as dinâmicas glocais de desinformação",
         "en": "Scientific paper title 2"
+      }
+    },
+    {
+      "url": "https://doi.org/10.5117/CCR2025.1.1.NEVE",
+      "year": "2025",
+      "journal": "Computational Communication Research",
+      "title": {
+        "pt": "Boosting Transformers: Recognizing Textual Entailment for Classification of Vaccine News Coverage",
+        "en": ""
+      }
+    },
+    {
+      "url": "http://dx.doi.org/10.1177/13548565251412698",
+      "year": "2025",
+      "journal": "Convergence: The International Journal of Research into New Media Technologies",
+      "title": {
+        "pt": "Role and perceptions of AI in science journalists’ work: Comparison between Brazil, India and UK",
+        "en": ""
+      }
+    },
+    {
+      "url": "http://dx.doi.org/10.17231/comsoc.48(2025).6334",
+      "year": "2025",
+      "journal": "Comunicação e Sociedade",
+      "title": {
+        "pt": "Desinformação climática no TikTok no Brasil: ciência e autoridades epistêmicas em disputa",
+        "en": ""
       }
     }
   ],
   "projects": [
     {
-      "url": "",
-      "name": "Nome do projeto 1",
+      "url": "https://github.com/lffernandes08/observatorio-ciencia-midia",
+      "name": "Observatório de Ciência na Mídia",
       "description": {
-        "pt": "Descrição curta do que a aplicação faz.",
+        "pt": "Acompanhamento diário da cobertura de ciência dos principais veículos de comunicação brasileiros.",
         "en": "Short description of what the application does."
       }
     },
     {
-      "url": "",
-      "name": "Nome do projeto 2",
+      "url": "https://github.com/lffernandes08/boletim-ufg-gerador",
+      "name": "Gerador de Boletins",
       "description": {
-        "pt": "Descrição curta do que a aplicação faz.",
+        "pt": "Geração automática de boletins da Universidade Federal de Goiás.",
         "en": "Short description of what the application does."
       }
     }
