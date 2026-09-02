@@ -115,16 +115,25 @@ $('fPhotoFile').addEventListener('change', async (e) => {
 
 // ---------- Listas repetíveis: matérias, publicações, projetos ----------
 
-function articleRowHTML(a, idx){
+function articleRowHTML(a, idx, total){
+  const langOptions = [
+    ['en', 'Inglês / English'],
+    ['es', 'Espanhol / Español'],
+    ['pt', 'Português']
+  ].map(([v, label]) => `<option value="${v}" ${a.lang === v ? 'selected' : ''}>${label}</option>`).join('');
+
   return `
     <div class="item-card" data-index="${idx}">
       <div class="item-row">
         <input type="text" data-field="url" value="${escAttr(a.url)}" placeholder="https://... (link da matéria)">
         <button type="button" class="btn small" data-action="fetch" data-list="articles">buscar automaticamente</button>
-        <button type="button" class="btn small danger" data-action="remove" data-list="articles">remover</button>
       </div>
       <div class="item-row two-col">
         <input type="text" data-field="outlet" value="${escAttr(a.outlet)}" placeholder="Nome do veículo">
+        <select data-field="lang" class="lang-select">${langOptions}</select>
+      </div>
+      <div class="item-row two-col">
+        <input type="text" data-field="title" value="${escAttr(a.title)}" placeholder="Título da matéria">
         <div class="image-field">
           <input type="text" data-field="image" value="${escAttr(a.image)}" placeholder="URL da foto/capa (opcional)">
           <label class="btn small file-btn">
@@ -133,22 +142,22 @@ function articleRowHTML(a, idx){
           </label>
         </div>
       </div>
-      <div class="item-row two-col">
-        <input type="text" data-field="title.pt" value="${escAttr(a.title && a.title.pt)}" placeholder="Título (PT)">
-        <input type="text" data-field="title.en" value="${escAttr(a.title && a.title.en)}" placeholder="Title (EN)">
-      </div>
       ${a.image ? `<img class="item-thumb-preview" data-preview src="${escAttr(resolvePreviewSrc(a.image))}" alt="">` : ''}
+      <div class="item-row reorder-row">
+        <button type="button" class="btn small" data-action="moveUp" data-list="articles" ${idx === 0 ? 'disabled' : ''}>↑ mover para cima</button>
+        <button type="button" class="btn small" data-action="moveDown" data-list="articles" ${idx === total - 1 ? 'disabled' : ''}>↓ mover para baixo</button>
+        <button type="button" class="btn small danger" data-action="remove" data-list="articles">remover</button>
+      </div>
       <div class="item-status" data-status></div>
     </div>`;
 }
 
-function paperRowHTML(p, idx){
+function paperRowHTML(p, idx, total){
   return `
     <div class="item-card" data-index="${idx}">
       <div class="item-row">
         <input type="text" data-field="url" value="${escAttr(p.url)}" placeholder="https://... (DOI ou link do artigo)">
         <button type="button" class="btn small" data-action="fetch" data-list="papers">buscar automaticamente</button>
-        <button type="button" class="btn small danger" data-action="remove" data-list="papers">remover</button>
       </div>
       <div class="item-row two-col">
         <input type="text" data-field="year" value="${escAttr(p.year)}" placeholder="Ano">
@@ -157,6 +166,11 @@ function paperRowHTML(p, idx){
       <div class="item-row two-col">
         <input type="text" data-field="title.pt" value="${escAttr(p.title && p.title.pt)}" placeholder="Título (PT)">
         <input type="text" data-field="title.en" value="${escAttr(p.title && p.title.en)}" placeholder="Title (EN)">
+      </div>
+      <div class="item-row reorder-row">
+        <button type="button" class="btn small" data-action="moveUp" data-list="papers" ${idx === 0 ? 'disabled' : ''}>↑ mover para cima</button>
+        <button type="button" class="btn small" data-action="moveDown" data-list="papers" ${idx === total - 1 ? 'disabled' : ''}>↓ mover para baixo</button>
+        <button type="button" class="btn small danger" data-action="remove" data-list="papers">remover</button>
       </div>
       <div class="item-status" data-status></div>
     </div>`;
@@ -182,7 +196,8 @@ function projectRowHTML(p, idx){
 }
 
 function renderList(listKey, containerId, rowFn){
-  $(containerId).innerHTML = state[listKey].map((item, i) => rowFn(item, i)).join('');
+  const list = state[listKey];
+  $(containerId).innerHTML = list.map((item, i) => rowFn(item, i, list.length)).join('');
 }
 const renderArticles = () => renderList('articles', 'articlesList', articleRowHTML);
 const renderPapers = () => renderList('papers', 'papersList', paperRowHTML);
@@ -193,6 +208,15 @@ function setupListContainer(containerId, listKey, renderFn, emptyItem){
 
   container.addEventListener('input', (e) => {
     const fieldEl = e.target.closest('[data-field]');
+    if (!fieldEl) return;
+    const card = e.target.closest('[data-index]');
+    const idx = Number(card.dataset.index);
+    setNested(state[listKey][idx], fieldEl.dataset.field, fieldEl.value);
+  });
+
+  // cobre o <select> de idioma, que dispara 'change' de forma mais confiável que 'input'
+  container.addEventListener('change', (e) => {
+    const fieldEl = e.target.closest('select[data-field]');
     if (!fieldEl) return;
     const card = e.target.closest('[data-index]');
     const idx = Number(card.dataset.index);
@@ -233,6 +257,18 @@ function setupListContainer(containerId, listKey, renderFn, emptyItem){
       return;
     }
 
+    if (btn.dataset.action === 'moveUp') {
+      const arr = state[listKey];
+      if (idx > 0) { [arr[idx - 1], arr[idx]] = [arr[idx], arr[idx - 1]]; renderFn(); }
+      return;
+    }
+
+    if (btn.dataset.action === 'moveDown') {
+      const arr = state[listKey];
+      if (idx < arr.length - 1) { [arr[idx], arr[idx + 1]] = [arr[idx + 1], arr[idx]]; renderFn(); }
+      return;
+    }
+
     if (btn.dataset.action === 'fetch') {
       const urlInput = card.querySelector('[data-field="url"]');
       const url = (urlInput.value || '').trim();
@@ -250,7 +286,7 @@ function setupListContainer(containerId, listKey, renderFn, emptyItem){
         const item = state[listKey][idx];
         if (listKey === 'articles') {
           if (data.siteName) item.outlet = data.siteName;
-          if (data.title) { item.title = item.title || {}; item.title.pt = data.title; }
+          if (data.title) item.title = data.title;
           if (data.image) item.image = data.image;
         } else if (listKey === 'papers') {
           if (data.title) { item.title = item.title || {}; item.title.pt = data.title; }
@@ -278,7 +314,7 @@ setupListContainer('papersList', 'papers', renderPapers);
 setupListContainer('projectsList', 'projects', renderProjects);
 
 $('addArticle').addEventListener('click', () => {
-  state.articles.push({ url: '', outlet: '', image: '', title: { pt: '', en: '' } });
+  state.articles.push({ url: '', outlet: '', image: '', lang: 'en', title: '' });
   renderArticles();
 });
 $('addPaper').addEventListener('click', () => {
@@ -310,7 +346,21 @@ function load(data){
   renderChips('chipsPt', state.tagsPt);
   renderChips('chipsEn', state.tagsEn);
 
-  state.articles = data.articles ? JSON.parse(JSON.stringify(data.articles)) : [];
+  // Migração: matérias antigas guardavam título bilíngue (title.pt/title.en) e não tinham
+  // idioma próprio. Convertemos para o novo formato sem perder o que já foi preenchido.
+  state.articles = (data.articles || []).map(a => {
+    let title = a.title;
+    if (title && typeof title === 'object') {
+      title = title.pt || title.en || '';
+    }
+    return {
+      url: a.url || '',
+      outlet: a.outlet || '',
+      image: a.image || '',
+      lang: a.lang || 'pt',
+      title: title || ''
+    };
+  });
   state.papers = data.papers ? JSON.parse(JSON.stringify(data.papers)) : [];
   state.projects = data.projects ? JSON.parse(JSON.stringify(data.projects)) : [];
   renderArticles(); renderPapers(); renderProjects();

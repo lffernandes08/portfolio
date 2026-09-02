@@ -43,109 +43,85 @@
       "url": "https://www.science.org/content/article/brazilian-scientist-s-experimental-paralysis-therapy-fueling-hope-and-hype",
       "outlet": "Science",
       "image": "img/20260316-nid-brazil-paralysis-lede-1784418609977.jpg",
-      "title": {
-        "pt": "A Brazilian scientist’s experimental paralysis therapy is fueling hope—and hype",
-        "en": "A Brazilian scientist’s experimental paralysis therapy is fueling hope—and hype"
-      }
+      "lang": "en",
+      "title": "A Brazilian scientist’s experimental paralysis therapy is fueling hope—and hype"
     },
     {
       "url": "https://www.scidev.net/global/news/amazon-at-risk-from-mineral-extraction-for-clean-energy/",
       "outlet": "SciDev.Net",
       "image": "https://www.scidev.net/global/wp-content/uploads/minerales-Amazonia.jpg",
-      "title": {
-        "pt": "Amazon at risk from mineral extraction for clean energy",
-        "en": "Amazon at risk from mineral extraction for clean energy"
-      }
+      "lang": "en",
+      "title": "Amazon at risk from mineral extraction for clean energy"
     },
     {
       "url": "https://www.scidev.net/global/news/rio-carnival-glitter-microplastics-pollute-beach/",
       "outlet": "SciDev.Net",
       "image": "https://www.scidev.net/global/wp-content/uploads/microplasticos-carnaval-1.jpg",
-      "title": {
-        "pt": "Rio Carnival glitter, microplastics ‘pollute beach’",
-        "en": "Rio Carnival glitter, microplastics ‘pollute beach’"
-      }
+      "lang": "en",
+      "title": "Rio Carnival glitter, microplastics ‘pollute beach’"
     },
     {
       "url": "https://www.scidev.net/america-latina/news/los-empleos-verdes-pagan-mas-en-america-latina/",
       "outlet": "SciDev.Net",
       "image": "https://www.scidev.net/america-latina/wp-content/uploads/sites/3/empleos-verdes.jpg",
-      "title": {
-        "pt": "Los empleos verdes pagan más en América Latina",
-        "en": "Green jobs pay more in Latin America"
-      }
+      "lang": "es",
+      "title": "Los empleos verdes pagan más en América Latina"
     },
     {
       "url": "https://www.scidev.net/america-latina/news/calor-aumenta-riesgo-de-desnutricion-infantil/",
       "outlet": "SciDev.Net",
       "image": "https://www.scidev.net/america-latina/wp-content/uploads/sites/3/calor-desnutricion.jpg",
-      "title": {
-        "pt": "Calor aumenta riesgo de desnutrición infantil",
-        "en": "Heat increases the risk of child malnutrition"
-      }
+      "lang": "es",
+      "title": "Calor aumenta riesgo de desnutrición infantil"
     },
     {
       "url": "https://www.scidev.net/america-latina/news/variante-blanquecina-del-aedes-aegypti-hallada-en-la-amazonia/",
       "outlet": "SciDev.Net",
       "image": "https://www.scidev.net/america-latina/wp-content/uploads/sites/3/Aedes-aegypti-variante-3.jpg",
-      "title": {
-        "pt": "Variante blanquecina del Aedes aegypti hallada en la Amazonia",
-        "en": "Whitish variant of Aedes aegypti found in the Amazon"
-      }
+      "lang": "es",
+      "title": "Variante blanquecina del Aedes aegypti hallada en la Amazonia"
     },
     {
       "url": "https://www.scidev.net/america-latina/news/arquitectura-aliada-contra-el-cambio-climatico-en-paises-en-desarrollo/",
       "outlet": "SciDev.Net",
       "image": "https://www.scidev.net/america-latina/wp-content/uploads/sites/3/arquitectura-clima.jpg",
-      "title": {
-        "pt": "Arquitectura, aliada contra el cambio climático en países en desarrollo",
-        "en": "Architecture, an ally against climate change in developing countries"
-      }
+      "lang": "es",
+      "title": "Arquitectura, aliada contra el cambio climático en países en desarrollo"
     },
     {
       "url": "https://www.scidev.net/america-latina/news/tierras-indigenas-reducen-incidencia-de-27-enfermedades/",
       "outlet": "SciDev.Net",
       "image": "https://www.scidev.net/america-latina/wp-content/uploads/sites/3/indigenas-enfermedades.jpg",
-      "title": {
-        "pt": "Tierras indígenas reducen incidencia de 27 enfermedades",
-        "en": "Indigenous lands reduce the incidence of 27 diseases"
-      }
+      "lang": "es",
+      "title": "Tierras indígenas reducen incidencia de 27 enfermedades"
     },
     {
       "url": "https://www.scidev.net/america-latina/news/en-america-latina-el-clima-preocupa-pero-no-divide-politicamente/",
       "outlet": "SciDev.Net",
       "image": "https://www.scidev.net/america-latina/wp-content/uploads/sites/3/percepcion-clima.jpg",
-      "title": {
-        "pt": "En América Latina el clima preocupa, pero no divide políticamente",
-        "en": "In Latin America, climate change is a concern but does not divide people politically"
-      }
+      "lang": "es",
+      "title": "En América Latina el clima preocupa, pero no divide políticamente"
     },
     {
       "url": "https://www.scidev.net/america-latina/news/bosques-amazonicos-poseen-capital-natural-irremplazable/",
       "outlet": "SciDev.Net",
       "image": "https://www.scidev.net/america-latina/wp-content/uploads/sites/3/Carajas-1.jpg",
-      "title": {
-        "pt": "Bosques amazónicos poseen ‘capital natural’ irremplazable",
-        "en": "Amazon forests possess irreplaceable ‘natural capital’"
-      }
+      "lang": "es",
+      "title": "Bosques amazónicos poseen ‘capital natural’ irremplazable"
     },
     {
       "url": "https://www.scidev.net/america-latina/news/brasil-erradicacion-de-coral-invasivo-es-todo-un-reto/",
       "outlet": "SciDev.Net",
       "image": "https://www.scidev.net/america-latina/wp-content/uploads/sites/3/coral-invasivo.jpg",
-      "title": {
-        "pt": "Brasil: erradicación de coral invasivo es todo un reto",
-        "en": "Brazil: eradicating invasive coral is a major challenge"
-      }
+      "lang": "es",
+      "title": "Brasil: erradicación de coral invasivo es todo un reto"
     },
     {
       "url": "https://jornal.ufg.br/n/192301-a-beleza-matematica-dos-fractais",
       "outlet": "Jornal UFG",
       "image": "https://files.cercomp.ufg.br/weby/up/243/o/capa_fractais_%281%29.png?1758927106",
-      "title": {
-        "pt": "A beleza matemática dos fractais",
-        "en": "The Mathematical Beauty of Fractals"
-      }
+      "lang": "pt",
+      "title": "A beleza matemática dos fractais"
     }
   ],
   "papers": [
