@@ -1,14 +1,14 @@
 {
   "profile": {
-    "name": "Luiz Neves, PhD",
+    "name": "Luiz Felipe Fernandes, PhD",
     "photo": "img/foto-luiz-ajustada-1784242692945.png",
     "roles": {
       "pt": "jornalista de ciência · pesquisador em divulgação científica · desenvolvedor diletante",
-      "en": "science journalist · science communication researcher · developer"
+      "en": "science journalist · science communication researcher · hobbyist developer"
     },
     "bio": {
-      "pt": "<p>- Jornalista de ciência com <b>22 anos</b> de experiência profissional.</p><p>- <b>Doutor em Ciências</b> (Fiocruz/RJ) e pesquisador na área de comunicação pública da ciência.</p><p>- <b>Editor-chefe</b> do portal de divulgação científica da Universidade Federal de Goiás (UFG).</p><p>- Colaboro com veículos nacionais e internacionais, como <b>Science</b> e <b>SciDev.Net</b>.</p><p>- Publico em <b>português</b>, <b>espanhol</b> e <b>inglês</b>.</p><p>- Recebi <b>17 prêmios</b> de jornalismo, incluindo o 1º lugar no Prêmio IMPA de Jornalismo pela reportagem \"A Beleza Matemática dos Fractais\", em 2025.</p><p>- Nas horas vagas, desenvolvo <b>aplicações</b> baseadas em Processamento de Linguagem Natural e Inteligência Artificial.</p>",
-      "en": "<p><strong>[Write your bio here in 1–2 paragraphs.]</strong> Coverage areas, outlets you've written for, and what you build as a researcher/developer.</p>"
+      "pt": "<p>- Jornalista de ciência com <b>22 anos</b> de experiência profissional.<br>- <b>Doutor em Ciências</b> pela Fiocruz/RJ e pesquisador na área de comunicação pública da ciência.<br>- <b>Editor-chefe</b> do portal de divulgação científica da Universidade Federal de Goiás (UFG).<br>- Colaboro com veículos nacionais e internacionais, como <b>Science</b> e <b>SciDev.Net</b>.<br>- Publico em <b>português</b>, <b>inglês</b> e&nbsp;<b>espanhol</b>.<br>- Recebi <b>17 prêmios</b> de jornalismo, incluindo o 1º lugar no Prêmio de Jornalismo do Instituto de Matemática Pura e Aplicada (IMPA) pela reportagem \"A Beleza Matemática dos Fractais\", em 2025.<br>- Desenvolvo <b>aplicações</b> baseadas em Processamento de Linguagem Natural e Inteligência Artificial.</p>",
+      "en": "<p>- Science journalist with <b>22 years of professional experience</b>.<br>- <b>PhD in Science</b> from Fiocruz/RJ and researcher on science communication.<br>- <b>Editor-in-Chief</b> of the science communication portal at the Federal University of Goiás (UFG).<br>- I contribute to national and international outlets, including <b>Science</b> and <b>SciDev.Net</b>.<br>- I publish in <b>Portuguese,</b>&nbsp;<b>English</b> and <b>Spanish</b>.<br>- I have received <b>17 journalism awards</b>, including first place in the Journalism Award of the Institute for Pure and Applied Mathematics (IMPA) for the feature <i>The Mathematical Beauty of Fractals</i> in 2025.<br>- I develop <b>applications</b> based on Natural Language Processing and Artificial Intelligence.</p>"
     },
     "tags": {
       "pt": [
@@ -29,8 +29,8 @@
       ]
     },
     "footerTagline": {
-      "pt": "jornalismo · pesquisa · ciência",
-      "en": "journalism · research · code"
+      "pt": "jornalismo · ciência · pesquisa",
+      "en": "journalism · science · research"
     },
     "social": {
       "email": "luiz.felipe@ufg.br",
@@ -45,7 +45,7 @@
       "image": "img/20260316-nid-brazil-paralysis-lede-1784418609977.jpg",
       "title": {
         "pt": "A Brazilian scientist’s experimental paralysis therapy is fueling hope—and hype",
-        "en": "Article title 1"
+        "en": "A Brazilian scientist’s experimental paralysis therapy is fueling hope—and hype"
       }
     },
     {
@@ -54,7 +54,7 @@
       "image": "https://www.scidev.net/global/wp-content/uploads/minerales-Amazonia.jpg",
       "title": {
         "pt": "Amazon at risk from mineral extraction for clean energy",
-        "en": "Article title 3"
+        "en": "Amazon at risk from mineral extraction for clean energy"
       }
     },
     {
@@ -63,7 +63,7 @@
       "image": "https://www.scidev.net/global/wp-content/uploads/microplasticos-carnaval-1.jpg",
       "title": {
         "pt": "Rio Carnival glitter, microplastics ‘pollute beach’",
-        "en": ""
+        "en": "Rio Carnival glitter, microplastics ‘pollute beach’"
       }
     },
     {
@@ -72,7 +72,7 @@
       "image": "https://www.scidev.net/america-latina/wp-content/uploads/sites/3/empleos-verdes.jpg",
       "title": {
         "pt": "Los empleos verdes pagan más en América Latina",
-        "en": ""
+        "en": "Green jobs pay more in Latin America"
       }
     },
     {
@@ -81,7 +81,7 @@
       "image": "https://www.scidev.net/america-latina/wp-content/uploads/sites/3/calor-desnutricion.jpg",
       "title": {
         "pt": "Calor aumenta riesgo de desnutrición infantil",
-        "en": ""
+        "en": "Heat increases the risk of child malnutrition"
       }
     },
     {
@@ -90,7 +90,61 @@
       "image": "https://www.scidev.net/america-latina/wp-content/uploads/sites/3/Aedes-aegypti-variante-3.jpg",
       "title": {
         "pt": "Variante blanquecina del Aedes aegypti hallada en la Amazonia",
-        "en": ""
+        "en": "Whitish variant of Aedes aegypti found in the Amazon"
+      }
+    },
+    {
+      "url": "https://www.scidev.net/america-latina/news/arquitectura-aliada-contra-el-cambio-climatico-en-paises-en-desarrollo/",
+      "outlet": "SciDev.Net",
+      "image": "https://www.scidev.net/america-latina/wp-content/uploads/sites/3/arquitectura-clima.jpg",
+      "title": {
+        "pt": "Arquitectura, aliada contra el cambio climático en países en desarrollo",
+        "en": "Architecture, an ally against climate change in developing countries"
+      }
+    },
+    {
+      "url": "https://www.scidev.net/america-latina/news/tierras-indigenas-reducen-incidencia-de-27-enfermedades/",
+      "outlet": "SciDev.Net",
+      "image": "https://www.scidev.net/america-latina/wp-content/uploads/sites/3/indigenas-enfermedades.jpg",
+      "title": {
+        "pt": "Tierras indígenas reducen incidencia de 27 enfermedades",
+        "en": "Indigenous lands reduce the incidence of 27 diseases"
+      }
+    },
+    {
+      "url": "https://www.scidev.net/america-latina/news/en-america-latina-el-clima-preocupa-pero-no-divide-politicamente/",
+      "outlet": "SciDev.Net",
+      "image": "https://www.scidev.net/america-latina/wp-content/uploads/sites/3/percepcion-clima.jpg",
+      "title": {
+        "pt": "En América Latina el clima preocupa, pero no divide políticamente",
+        "en": "In Latin America, climate change is a concern but does not divide people politically"
+      }
+    },
+    {
+      "url": "https://www.scidev.net/america-latina/news/bosques-amazonicos-poseen-capital-natural-irremplazable/",
+      "outlet": "SciDev.Net",
+      "image": "https://www.scidev.net/america-latina/wp-content/uploads/sites/3/Carajas-1.jpg",
+      "title": {
+        "pt": "Bosques amazónicos poseen ‘capital natural’ irremplazable",
+        "en": "Amazon forests possess irreplaceable ‘natural capital’"
+      }
+    },
+    {
+      "url": "https://www.scidev.net/america-latina/news/brasil-erradicacion-de-coral-invasivo-es-todo-un-reto/",
+      "outlet": "SciDev.Net",
+      "image": "https://www.scidev.net/america-latina/wp-content/uploads/sites/3/coral-invasivo.jpg",
+      "title": {
+        "pt": "Brasil: erradicación de coral invasivo es todo un reto",
+        "en": "Brazil: eradicating invasive coral is a major challenge"
+      }
+    },
+    {
+      "url": "https://jornal.ufg.br/n/192301-a-beleza-matematica-dos-fractais",
+      "outlet": "Jornal UFG",
+      "image": "https://files.cercomp.ufg.br/weby/up/243/o/capa_fractais_%281%29.png?1758927106",
+      "title": {
+        "pt": "A beleza matemática dos fractais",
+        "en": "The Mathematical Beauty of Fractals"
       }
     }
   ],
