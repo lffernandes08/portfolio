@@ -62,7 +62,7 @@
   }
 
   .hero{
-    padding:150px 0 90px;
+    padding:150px 0 36px;
     display:grid; grid-template-columns:auto 1fr; gap:44px; align-items:start;
   }
   .photo-frame{
