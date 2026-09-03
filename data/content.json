@@ -34,7 +34,7 @@
     },
     "social": {
       "email": "luiz.felipe@ufg.br",
-      "linkedin": "www.linkedin.com/in/lffernandes08",
+      "linkedin": "https://www.linkedin.com/in/lffernandes08/",
       "github": "https://github.com/lffernandes08"
     }
   },
@@ -278,23 +278,21 @@
   "projects": [
     {
       "url": "https://observatorio-ciencia.streamlit.app/",
-      "name": "Observatório de Ciência na Mídia",
+      "name": {
+        "pt": "Observatório de Ciência na Mídia",
+        "en": "Science in the Media Observatory"
+      },
       "description": {
         "pt": "Plataforma de monitoramento da cobertura jornalística de ciência em grandes veículos brasileiros, desenvolvido em Python. Inclui coleta automatizada de dados (web scraping), banco de dados estruturado e painel interativo de visualização.",
         "en": "A platform for monitoring science journalism coverage across major Brazilian news outlets, developed in Python. It includes automated data collection (web scraping), a structured database, and an interactive visualisation dashboard."
       }
     },
     {
-      "url": "https://github.com/lffernandes08/boletim-ufg-gerador",
-      "name": "Gerador de Boletins",
-      "description": {
-        "pt": "Aplicação web para geração automatizada de boletins informativos da Secretaria de Comunicação da UFG e newsletter do Jornal UFG, distribuídos às comunidades acadêmica e externa.",
-        "en": "Web application for the automated generation of newsletters for UFG's Communications Office and the Jornal UFG newsletter, distributed to both the academic community and the wider public."
-      }
-    },
-    {
       "url": "https://pypi.org/project/FindOrg/",
-      "name": "FindOrg",
+      "name": {
+        "pt": "FindOrg",
+        "en": "FindOrg"
+      },
       "description": {
         "pt": "Biblioteca Python de código aberto para Reconhecimento de Entidades Nomeadas (NER) voltado à extração de nomes de organizações em textos, utilizando Grandes Modelos de Linguagem.",
         "en": "Open-source Python library for Named Entity Recognition (NER) focused on extracting organisation names from text, using Large Language Models."
@@ -302,10 +300,24 @@
     },
     {
       "url": "https://journal.computationalcommunication.org/article/view/8965",
-      "name": "Classificador Automático de Manchetes sobre Vacina",
+      "name": {
+        "pt": "Classificador Automático de Manchetes sobre Vacina",
+        "en": "Automated Vaccine Headline Classifier"
+      },
       "description": {
         "pt": "Modelo de linguagem ajustado (fine-tuned) com a abordagem RTE (Recognizing Textual Entailment) para classificação automática de manchetes sobre vacinas em 10 categorias temáticas.",
         "en": "Language model fine-tuned using the RTE (Recognizing Textual Entailment) approach for the automated classification of vaccine-related headlines into 10 thematic categories."
+      }
+    },
+    {
+      "url": "https://github.com/lffernandes08/boletim-ufg-gerador",
+      "name": {
+        "pt": "Gerador de Boletins",
+        "en": "Newsletter Generator"
+      },
+      "description": {
+        "pt": "Aplicação web para geração automatizada de boletins informativos da Secretaria de Comunicação da UFG e newsletter do Jornal UFG, distribuídos às comunidades acadêmica e externa.",
+        "en": "Web application for the automated generation of newsletters for UFG's Communications Office and the Jornal UFG newsletter, distributed to both the academic community and the wider public."
       }
     }
   ]
