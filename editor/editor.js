@@ -184,8 +184,9 @@ function projectRowHTML(p, idx){
         <button type="button" class="btn small" data-action="fetch" data-list="projects">buscar automaticamente</button>
         <button type="button" class="btn small danger" data-action="remove" data-list="projects">remover</button>
       </div>
-      <div class="item-row">
-        <input type="text" data-field="name" value="${escAttr(p.name)}" placeholder="Nome do projeto">
+      <div class="item-row two-col">
+        <input type="text" data-field="name.pt" value="${escAttr(p.name && p.name.pt)}" placeholder="Nome do projeto (PT)">
+        <input type="text" data-field="name.en" value="${escAttr(p.name && p.name.en)}" placeholder="Nome do projeto (EN)">
       </div>
       <div class="item-row two-col">
         <input type="text" data-field="description.pt" value="${escAttr(p.description && p.description.pt)}" placeholder="Descrição curta (PT)">
@@ -293,7 +294,11 @@ function setupListContainer(containerId, listKey, renderFn, emptyItem){
           if (data.journal) item.journal = data.journal;
           if (data.year) item.year = data.year;
         } else if (listKey === 'projects') {
-          if (data.title) item.name = item.name || data.title;
+          if (data.title) {
+            item.name = item.name || {};
+            if (!item.name.pt) item.name.pt = data.title;
+            if (!item.name.en) item.name.en = data.title;
+          }
           if (data.description) { item.description = item.description || {}; item.description.pt = data.description.slice(0, 220); }
         }
         renderFn();
@@ -322,7 +327,7 @@ $('addPaper').addEventListener('click', () => {
   renderPapers();
 });
 $('addProject').addEventListener('click', () => {
-  state.projects.push({ url: '', name: '', description: { pt: '', en: '' } });
+  state.projects.push({ url: '', name: { pt: '', en: '' }, description: { pt: '', en: '' } });
   renderProjects();
 });
 
@@ -362,7 +367,19 @@ function load(data){
     };
   });
   state.papers = data.papers ? JSON.parse(JSON.stringify(data.papers)) : [];
-  state.projects = data.projects ? JSON.parse(JSON.stringify(data.projects)) : [];
+  // Migração: nome do projeto era um texto único (mesmo nome em PT e EN).
+  // Agora vira bilíngue, como a descrição — preservando o que já existia.
+  state.projects = (data.projects || []).map(p => {
+    let name = p.name;
+    if (typeof name === 'string') {
+      name = { pt: name, en: name };
+    }
+    return {
+      url: p.url || '',
+      name: { pt: (name && name.pt) || '', en: (name && name.en) || '' },
+      description: { pt: (p.description && p.description.pt) || '', en: (p.description && p.description.en) || '' }
+    };
+  });
   renderArticles(); renderPapers(); renderProjects();
 }
 

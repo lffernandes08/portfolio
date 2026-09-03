@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Research Papers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <div class="brand"><span class="dot"></span><span id="brandName">Portfólio</span></div>
+    <div class="header-right">
+      <a class="back-link" href="index.html">← portfolio</a>
+    </div>
+  </nav>
+</header>
+
+<main class="wrap" style="padding-top:150px; padding-bottom:90px;">
+  <div class="sec-head"><div class="sec-card"><h2 class="sec-title">Research Papers</h2></div></div>
+  <div class="pub-list" id="fullPubList"></div>
+  <p class="empty-note" id="emptyNote" style="display:none;"></p>
+</main>
+
+<script>
+  function esc(s){
+    return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+  function pick(field, lang){
+    if(!field) return '';
+    return field[lang] || field.pt || '';
+  }
+
+  fetch('./data/content.json', { cache: 'no-store' })
+    .then(r => r.json())
+    .then(data => {
+      document.getElementById('brandName').textContent = data.profile.name || 'Portfólio';
+      const items = data.papers || [];
+
+      if (!items.length) {
+        document.getElementById('emptyNote').textContent = 'No papers published yet.';
+        document.getElementById('emptyNote').style.display = 'block';
+        return;
+      }
+
+      document.getElementById('fullPubList').innerHTML = items.map(p => `
+        <a class="pub" href="${esc(p.url || '#')}" target="_blank" rel="noopener">
+          <div class="year mono">${esc(p.year)}</div>
+          <div>
+            <div class="pub-title">${esc(pick(p.title, 'en'))}</div>
+            <div class="pub-journal">${esc(p.journal)}</div>
+          </div>
+          <div class="link">DOI / link →</div>
+        </a>`).join('');
+    })
+    .catch(() => {
+      document.getElementById('emptyNote').textContent = 'Could not load content.';
+      document.getElementById('emptyNote').style.display = 'block';
+    });
+</script>
+
+</body>
+</html>

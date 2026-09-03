@@ -62,7 +62,10 @@
   </section>
 
   <section id="publicacoes">
-    <div class="sec-head reveal"><div class="sec-card"><h2 class="sec-title" id="secPubsTitle">Artigos científicos</h2></div></div>
+    <div class="sec-head reveal">
+      <div class="sec-card"><h2 class="sec-title" id="secPubsTitle">Artigos científicos</h2></div>
+      <a class="sec-more" id="pubsMore" href="pesquisa.html" style="display:none;"></a>
+    </div>
     <div class="pub-list reveal" id="pubList"></div>
   </section>
 
@@ -92,11 +95,15 @@
     pt: { navAbout:'sobre', navMedia:'jornalismo', navPubs:'pesquisa', navProjects:'apps & códigos', navContact:'contato',
           secMedia:'Jornalismo', secPubs:'Artigos científicos', secProjects:'Apps & códigos', secContact:'Contato',
           photoPlaceholder:'sua foto aqui', mediaThumbPlaceholder:'foto/capa da matéria', pubLink:'DOI / link →', projLink:'ver →',
-          mediaGroupEn:'Em inglês', mediaGroupEs:'Em espanhol', mediaGroupPt:'Em português', seeMore:'ver mais →' },
+          mediaGroupEn:'Em inglês', mediaGroupEs:'Em espanhol', mediaGroupPt:'Em português',
+          seeMorePrefix:'ver mais em', seeMoreGeneric:'ver mais →',
+          langName:{ en:'inglês', es:'espanhol', pt:'português' } },
     en: { navAbout:'about', navMedia:'journalism', navPubs:'research', navProjects:'apps & code', navContact:'contact',
           secMedia:'Journalism', secPubs:'Research Papers', secProjects:'Apps & Code', secContact:'Contact',
           photoPlaceholder:'your photo here', mediaThumbPlaceholder:'photo/cover of the piece', pubLink:'DOI / link →', projLink:'view →',
-          mediaGroupEn:'In English', mediaGroupEs:'In Spanish', mediaGroupPt:'In Portuguese', seeMore:'see more →' }
+          mediaGroupEn:'In English', mediaGroupEs:'In Spanish', mediaGroupPt:'In Portuguese',
+          seeMorePrefix:'see more in', seeMoreGeneric:'see more →',
+          langName:{ en:'English', es:'Spanish', pt:'Portuguese' } }
   };
 
   function esc(s){
@@ -109,6 +116,10 @@
   function titleOf(a, lang){
     if (typeof a.title === 'string') return a.title;
     return pick(a.title, lang);
+  }
+  function fieldLang(v, lang){
+    if (typeof v === 'string') return v;
+    return pick(v, lang);
   }
   function displayUrl(url){
     return (url || '').replace(/^https?:\/\//, '');
@@ -186,18 +197,21 @@
           <h3>${esc(titleOf(a, lang))}</h3>
         </a>`).join('');
       const seeMore = items.length > 3
-        ? `<a class="media-more" href="materias.html?lang=${lg}">${esc(t.seeMore)}</a>`
+        ? `<a class="media-more" href="materias.html?lang=${lg}">${esc(t.seeMorePrefix)} ${esc(t.langName[lg])} →</a>`
         : '';
       return `
         <div class="media-group">
-          <div class="media-group-head">${esc(groupLabels[lg])}</div>
+          <div class="media-group-head-row">
+            <div class="media-group-head">${esc(groupLabels[lg])}</div>
+            ${seeMore}
+          </div>
           <div class="media-grid">${cards}</div>
-          ${seeMore}
         </div>`;
     }).join('');
     document.getElementById('mediaGrid').innerHTML = mediaHtml;
 
-    document.getElementById('pubList').innerHTML = (d.papers || []).map(p => `
+    const allPapers = d.papers || [];
+    document.getElementById('pubList').innerHTML = allPapers.slice(0, 5).map(p => `
       <a class="pub" href="${esc(p.url || '#')}" target="_blank" rel="noopener">
         <div class="year mono">${esc(p.year)}</div>
         <div>
@@ -207,10 +221,18 @@
         <div class="link">${esc(t.pubLink)}</div>
       </a>`).join('');
 
+    const pubsMore = document.getElementById('pubsMore');
+    if (allPapers.length > 5) {
+      pubsMore.style.display = 'inline-block';
+      pubsMore.textContent = t.seeMoreGeneric;
+    } else {
+      pubsMore.style.display = 'none';
+    }
+
     document.getElementById('projList').innerHTML = (d.projects || []).map(p => `
       <a class="proj" href="${esc(p.url || '#')}" target="_blank" rel="noopener">
         <div>
-          <div class="proj-name">${esc(p.name)}</div>
+          <div class="proj-name">${esc(fieldLang(p.name, lang))}</div>
           <div class="proj-desc">${esc(pick(p.description, lang))}</div>
         </div>
         <div class="link">${esc(t.projLink)}</div>

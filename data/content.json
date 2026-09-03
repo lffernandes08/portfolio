@@ -7,8 +7,8 @@
       "en": "science journalist · science communication researcher · hobbyist developer"
     },
     "bio": {
-      "pt": "<p>- Jornalista de ciência com <b>22 anos</b> de experiência profissional.<br>- <b>Doutor em Ciências</b> pela Fiocruz/RJ e pesquisador na área de comunicação pública da ciência.<br>- <b>Editor-chefe</b> do portal de divulgação científica da Universidade Federal de Goiás (UFG).<br>- Colaboro com veículos nacionais e internacionais, como <b>Science</b> e <b>SciDev.Net</b>.<br>- Publico em <b>português</b>, <b>inglês</b> e&nbsp;<b>espanhol</b>.<br>- Recebi <b>17 prêmios</b> de jornalismo, incluindo o 1º lugar no Prêmio de Jornalismo do Instituto de Matemática Pura e Aplicada (IMPA) pela reportagem \"A Beleza Matemática dos Fractais\", em 2025.<br>- Desenvolvo <b>aplicações</b> baseadas em Processamento de Linguagem Natural e Inteligência Artificial.</p>",
-      "en": "<p>- Science journalist with <b>22 years of professional experience</b>.<br>- <b>PhD in Science</b> from Fiocruz/RJ and researcher on science communication.<br>- <b>Editor-in-Chief</b> of the science communication portal at the Federal University of Goiás (UFG).<br>- I contribute to national and international outlets, including <b>Science</b> and <b>SciDev.Net</b>.<br>- I publish in <b>Portuguese,</b>&nbsp;<b>English</b> and <b>Spanish</b>.<br>- I have received <b>17 journalism awards</b>, including first place in the Journalism Award of the Institute for Pure and Applied Mathematics (IMPA) for the feature <i>The Mathematical Beauty of Fractals</i> in 2025.<br>- I develop <b>applications</b> based on Natural Language Processing and Artificial Intelligence.</p>"
+      "pt": "<p>- Jornalista de ciência com <b>22 anos</b> de experiência profissional.<br>- <b>Doutor em Ciências</b> pela Fiocruz/RJ e pesquisador na área de comunicação pública da ciência.<br>- <b>Editor-chefe</b> do portal de divulgação científica da Universidade Federal de Goiás (UFG).<br>- Colaboro com veículos nacionais e internacionais, como <b><i>Science</i></b> e <b><i>SciDev.Net</i></b>.<br>- Publico em <b>português</b>, <b>inglês</b> e&nbsp;<b>espanhol</b>.<br>- Recebi <b>17 prêmios</b> de jornalismo, incluindo o 1º lugar no Prêmio de Jornalismo do Instituto de Matemática Pura e Aplicada (IMPA) pela reportagem \"A Beleza Matemática dos Fractais\", em 2025.<br>- Desenvolvo <b>aplicações</b> baseadas em Processamento de Linguagem Natural e Inteligência Artificial.</p>",
+      "en": "<p>- Science journalist with <b>22 years of professional experience</b>.<br>- <b>PhD in Science</b> from Fiocruz/RJ and researcher on science communication.<br>- <b>Editor-in-Chief</b> of the science communication portal at the Federal University of Goiás (UFG).<br>- I contribute to national and international outlets, including <b><i>Science</i></b> and <b><i>SciDev.Net</i></b>.<br>- I publish in <b>Portuguese,</b>&nbsp;<b>English</b> and <b>Spanish</b>.<br>- I have received <b>17 journalism awards</b>, including first place in the Journalism Award of the Institute for Pure and Applied Mathematics (IMPA) for the feature <i>The Mathematical Beauty of Fractals</i> in 2025.<br>- I develop <b>applications</b> based on Natural Language Processing and Artificial Intelligence.</p>"
     },
     "tags": {
       "pt": [
@@ -34,7 +34,7 @@
     },
     "social": {
       "email": "luiz.felipe@ufg.br",
-      "linkedin": "www.linkedin.com/in/luiz-felipe-fernandes-neves-35ba941a9",
+      "linkedin": "www.linkedin.com/in/lffernandes08",
       "github": "https://github.com/lffernandes08"
     }
   },
@@ -59,6 +59,20 @@
       "image": "https://www.scidev.net/global/wp-content/uploads/microplasticos-carnaval-1.jpg",
       "lang": "en",
       "title": "Rio Carnival glitter, microplastics ‘pollute beach’"
+    },
+    {
+      "url": "https://www.scidev.net/global/news/climate-smart-housing-design-helps-cities-beat-the-heat/",
+      "outlet": "SciDev.Net",
+      "image": "https://www.scidev.net/global/wp-content/uploads/arquitectura-clima-MAIN.jpg",
+      "lang": "en",
+      "title": "Climate-smart housing design helps cities beat the heat"
+    },
+    {
+      "url": "https://www.scidev.net/global/news/climate-change-threatens-latin-american-banana-exports/",
+      "outlet": "SciDev.Net",
+      "image": "https://www.scidev.net/global/wp-content/uploads/banana_roadside_MAIN.jpg",
+      "lang": "en",
+      "title": "Climate change threatens Latin American banana exports"
     },
     {
       "url": "https://www.scidev.net/america-latina/news/los-empleos-verdes-pagan-mas-en-america-latina/",
@@ -103,6 +117,13 @@
       "title": "En América Latina el clima preocupa, pero no divide políticamente"
     },
     {
+      "url": "https://www.scidev.net/america-latina/news/brics-ponen-a-la-ciencia-y-la-ia-en-el-centro-de-su-agenda/",
+      "outlet": "SciDev.Net",
+      "image": "https://www.scidev.net/america-latina/wp-content/uploads/sites/3/BRICS-1.jpg",
+      "lang": "es",
+      "title": "BRICS ponen a la ciencia y la IA en el centro de su agenda"
+    },
+    {
       "url": "https://www.scidev.net/america-latina/news/bosques-amazonicos-poseen-capital-natural-irremplazable/",
       "outlet": "SciDev.Net",
       "image": "https://www.scidev.net/america-latina/wp-content/uploads/sites/3/Carajas-1.jpg",
@@ -122,6 +143,62 @@
       "image": "https://files.cercomp.ufg.br/weby/up/243/o/capa_fractais_%281%29.png?1758927106",
       "lang": "pt",
       "title": "A beleza matemática dos fractais"
+    },
+    {
+      "url": "https://jornal.ufg.br/n/192675-pesquisa-esclarece-uma-das-questoes-mais-antigas-da-ecologia",
+      "outlet": "Jornal UFG",
+      "image": "https://files.cercomp.ufg.br/weby/up/243/o/parrot-3601194_1280.jpg?1751560518",
+      "lang": "pt",
+      "title": "Pesquisa esclarece uma das questões mais antigas da ecologia"
+    },
+    {
+      "url": "https://jornal.ufg.br/n/196229-especialistas-alertam-para-a-urgencia-climatica-no-bioma-mais-ameacado-do-brasil",
+      "outlet": "Jornal UFG",
+      "image": "https://files.cercomp.ufg.br/weby/up/243/o/_UFG4241.jpg?1762472722",
+      "lang": "pt",
+      "title": "Especialistas alertam para a urgência climática no bioma mais ameaçado do Brasil"
+    },
+    {
+      "url": "https://jornal.ufg.br/n/199051-pintura-corporal-indigena-no-alto-xingu-se-transforma-com-influencias-digitais",
+      "outlet": "Jornal UFG",
+      "image": "https://files.cercomp.ufg.br/weby/up/243/o/pintura_corporal2.png?1772799064",
+      "lang": "pt",
+      "title": "Pintura corporal indígena no Alto Xingu se transforma com influências digitais"
+    },
+    {
+      "url": "https://jornal.ufg.br/n/190312-pesquisadores-criam-superparticula-com-potencial-para-diagnosticar-e-tratar-cancer",
+      "outlet": "Jornal UFG",
+      "image": "https://files.cercomp.ufg.br/weby/up/243/o/andris.png?1744634346",
+      "lang": "pt",
+      "title": "Pesquisadores criam superpartícula com potencial para diagnosticar e tratar câncer"
+    },
+    {
+      "url": "https://jornal.ufg.br/n/186343-cientistas-descobrem-novo-material-supercondutor",
+      "outlet": "Jornal UFG",
+      "image": "https://files.cercomp.ufg.br/weby/up/243/o/professor_vanuildo.png?1732281549",
+      "lang": "pt",
+      "title": "Cientistas descobrem novo material supercondutor"
+    },
+    {
+      "url": "https://jornal.ufg.br/n/185990-destino-do-cerrado-esta-nas-maos-de-0-06-da-populacao-brasileira",
+      "outlet": "Jornal UFG",
+      "image": "https://files.cercomp.ufg.br/weby/up/243/o/08112024-_UFG7247.jpg?1731324235",
+      "lang": "pt",
+      "title": "Destino do Cerrado está nas mãos de 0,06% da população brasileira"
+    },
+    {
+      "url": "https://jornal.ufg.br/n/175605-exposicao-a-agrotoxicos-pode-estar-associada-a-maior-incidencia-de-cancer-entre-trabalhadores-rurais-goianos",
+      "outlet": "Jornal UFG",
+      "image": "https://files.cercomp.ufg.br/weby/up/243/o/agro1.png?1698001820",
+      "lang": "pt",
+      "title": "Exposição a agrotóxicos pode estar associada a maior incidência de câncer entre trabalhadores rurais goianos"
+    },
+    {
+      "url": "https://jornal.ufg.br/n/118701-vacinacao-entre-a-ciencia-e-as-fake-news",
+      "outlet": "Jornal UFG",
+      "image": "https://files.cercomp.ufg.br/weby/up/243/o/Vacina2.jpg?1564151073",
+      "lang": "en",
+      "title": "Vacinação: entre a ciência e as fake news"
     }
   ],
   "papers": [
@@ -131,7 +208,7 @@
       "journal": "Journal of Science Communication",
       "title": {
         "pt": "The politics of (mis)trust: reframing science communication in a polarized Brazil",
-        "en": "Scientific paper title 1"
+        "en": "The politics of (mis)trust: reframing science communication in a polarized Brazil"
       }
     },
     {
@@ -140,7 +217,7 @@
       "journal": "Vivat Academia",
       "title": {
         "pt": "A crise climática e as dinâmicas glocais de desinformação",
-        "en": "Scientific paper title 2"
+        "en": "The climate crisis and the glocal dynamics of disinformation"
       }
     },
     {
@@ -149,7 +226,7 @@
       "journal": "Computational Communication Research",
       "title": {
         "pt": "Boosting Transformers: Recognizing Textual Entailment for Classification of Vaccine News Coverage",
-        "en": ""
+        "en": "Boosting Transformers: Recognizing Textual Entailment for Classification of Vaccine News Coverage"
       }
     },
     {
@@ -158,7 +235,7 @@
       "journal": "Convergence: The International Journal of Research into New Media Technologies",
       "title": {
         "pt": "Role and perceptions of AI in science journalists’ work: Comparison between Brazil, India and UK",
-        "en": ""
+        "en": "Role and perceptions of AI in science journalists’ work: Comparison between Brazil, India and UK"
       }
     },
     {
@@ -167,25 +244,68 @@
       "journal": "Comunicação e Sociedade",
       "title": {
         "pt": "Desinformação climática no TikTok no Brasil: ciência e autoridades epistêmicas em disputa",
-        "en": ""
+        "en": "Climate disinformation on TikTok in Brazil: science and epistemic authorities in dispute"
+      }
+    },
+    {
+      "url": "http://dx.doi.org/10.25200/BJR.v21n1.2025.1711",
+      "year": "2025",
+      "journal": "Brazilian Journalism Research",
+      "title": {
+        "pt": "Vaccines on YouTube in Brazil: an exploratory study using Natural Language Processing",
+        "en": "Vaccines on YouTube in Brazil: an exploratory study using Natural Language Processing"
+      }
+    },
+    {
+      "url": "http://dx.doi.org/10.11606/issn.2316-9125.v29i1p127-146",
+      "year": "2024",
+      "journal": "Comunicação & Educação",
+      "title": {
+        "pt": "Entre continuidades e rupturas: a representação do cientista e da ciência a partir de imagens geradas pelo ChatGPT",
+        "en": "Between continuities and ruptures: the representation of the scientist and of science in images generated by ChatGPT"
+      }
+    },
+    {
+      "url": "http://dx.doi.org/10.22323/3.07020205",
+      "year": "2024",
+      "journal": "Journal of Science Communication - América Latina",
+      "title": {
+        "pt": "Behind the scenes of science: journalism as a strategy for combating disinformation",
+        "en": "Behind the scenes of science: journalism as a strategy for combating disinformation"
       }
     }
   ],
   "projects": [
     {
-      "url": "https://github.com/lffernandes08/observatorio-ciencia-midia",
+      "url": "https://observatorio-ciencia.streamlit.app/",
       "name": "Observatório de Ciência na Mídia",
       "description": {
-        "pt": "Acompanhamento diário da cobertura de ciência dos principais veículos de comunicação brasileiros.",
-        "en": "Short description of what the application does."
+        "pt": "Plataforma de monitoramento da cobertura jornalística de ciência em grandes veículos brasileiros, desenvolvido em Python. Inclui coleta automatizada de dados (web scraping), banco de dados estruturado e painel interativo de visualização.",
+        "en": "A platform for monitoring science journalism coverage across major Brazilian news outlets, developed in Python. It includes automated data collection (web scraping), a structured database, and an interactive visualisation dashboard."
       }
     },
     {
       "url": "https://github.com/lffernandes08/boletim-ufg-gerador",
       "name": "Gerador de Boletins",
       "description": {
-        "pt": "Geração automática de boletins da Universidade Federal de Goiás.",
-        "en": "Short description of what the application does."
+        "pt": "Aplicação web para geração automatizada de boletins informativos da Secretaria de Comunicação da UFG e newsletter do Jornal UFG, distribuídos às comunidades acadêmica e externa.",
+        "en": "Web application for the automated generation of newsletters for UFG's Communications Office and the Jornal UFG newsletter, distributed to both the academic community and the wider public."
+      }
+    },
+    {
+      "url": "https://pypi.org/project/FindOrg/",
+      "name": "FindOrg",
+      "description": {
+        "pt": "Biblioteca Python de código aberto para Reconhecimento de Entidades Nomeadas (NER) voltado à extração de nomes de organizações em textos, utilizando Grandes Modelos de Linguagem.",
+        "en": "Open-source Python library for Named Entity Recognition (NER) focused on extracting organisation names from text, using Large Language Models."
+      }
+    },
+    {
+      "url": "https://journal.computationalcommunication.org/article/view/8965",
+      "name": "Classificador Automático de Manchetes sobre Vacina",
+      "description": {
+        "pt": "Modelo de linguagem ajustado (fine-tuned) com a abordagem RTE (Recognizing Textual Entailment) para classificação automática de manchetes sobre vacinas em 10 categorias temáticas.",
+        "en": "Language model fine-tuned using the RTE (Recognizing Textual Entailment) approach for the automated classification of vaccine-related headlines into 10 thematic categories."
       }
     }
   ]
