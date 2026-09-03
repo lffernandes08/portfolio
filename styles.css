@@ -137,7 +137,7 @@
     opacity:0.6; transition:color .2s ease;
   }
   .media-card:hover .media-thumb::after{ color:var(--cyan); opacity:1; }
-  .media-outlet{ font-family:'JetBrains Mono',monospace; font-size:10.5px; color:var(--cyan); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:6px; }
+  .media-outlet{ font-family:'JetBrains Mono',monospace; font-size:10.5px; color:var(--violet); letter-spacing:0.03em; margin-bottom:6px; }
   .media-card h3{ font-family:'Source Serif 4', serif; font-weight:500; font-size:16px; line-height:1.35; }
 
   @media (max-width:720px){ .media-grid{ grid-template-columns:repeat(2,1fr); } }
@@ -197,6 +197,7 @@
 /* grupos de matérias por idioma */
 .media-group{ margin-bottom:28px; }
 .media-group:last-child{ margin-bottom:0; }
+.media-group + .media-group{ border-top:1px solid var(--border); padding-top:28px; }
 .media-group-head-row{
   display:flex; align-items:baseline; justify-content:space-between; gap:12px;
   margin-bottom:14px; flex-wrap:wrap;

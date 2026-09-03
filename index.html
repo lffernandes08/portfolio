@@ -168,9 +168,21 @@
     const tags = (d.profile.tags && (d.profile.tags[lang] || d.profile.tags.pt)) || [];
     document.getElementById('tagsContainer').innerHTML = tags.map(tag => `<span class="tag">${esc(tag)}</span>`).join('');
 
-    const email = d.profile.social.email || '';
-    const linkedin = d.profile.social.linkedin || '';
-    const github = d.profile.social.github || '';
+    // normaliza e-mail (remove "mailto:" se a pessoa já tiver colado com o prefixo)
+    // e URLs (adiciona "https://" se estiver faltando, senão o navegador trata como link relativo)
+    function normalizeEmail(v){
+      return (v || '').trim().replace(/^mailto:/i, '');
+    }
+    function normalizeUrl(v){
+      v = (v || '').trim();
+      if (!v) return '';
+      if (/^https?:\/\//i.test(v)) return v;
+      return 'https://' + v;
+    }
+
+    const email = normalizeEmail(d.profile.social.email);
+    const linkedin = normalizeUrl(d.profile.social.linkedin);
+    const github = normalizeUrl(d.profile.social.github);
 
     document.getElementById('iconMail').href = email ? ('mailto:' + email) : '#';
     document.getElementById('iconLinkedin').href = linkedin || '#';
